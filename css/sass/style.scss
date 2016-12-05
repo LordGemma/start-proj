@@ -1,0 +1,48 @@
+/*===============---Variables---===============*/
+
+
+
+/*===============---@mixins---===============*/
+@mixin bg-size($bgz) {
+  -webkit-background-size: $bgz;
+  background-size: $bgz;
+}
+
+@mixin box-shadow($hsh, $wsh, $blur, $spread, $color) {
+  -webkit-box-shadow: $hsh $wsh $blur $spread $color;
+  -moz-box-shadow: $hsh $wsh $blur $spread $color;
+  box-shadow: $hsh $wsh $blur $spread $color;
+}
+
+@mixin transition($prop, $time) {
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop $time;
+  -ms-transition: $prop $time;
+  -o-transition: $prop $time;
+  transition: $prop $time;
+}
+
+@mixin transform($prop) {
+  -webkit-transform: $prop;
+  -moz-transform: $prop;
+  -ms-transform: $prop;
+  -o-transform: $prop;
+  transform: $prop;
+}
+
+@mixin border-radius($br) {
+  -webkit-border-radius: $br;
+  -moz-border-radius: $br;
+  border-radius: $br;
+}
+
+
+/*===============---Custom styles---===============*/
+
+body {
+  background-color: #333;
+}
+
+
+/*===============---Media---===============*/
+@import "media";
